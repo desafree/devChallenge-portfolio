@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import UserLarge from "./components/UserLarge";
+import UserSmall from "./components/UserSmall";
+import Project from "./components/Project";
+import ProjectSm from "./components/ProjectSm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserLarge name={'Nicola De Sanctis'} url={'https://portfolio-challenge.vercel.app/static/media/human.36814bf1.jpg'}></UserLarge>
+      <UserSmall name={'Nicola De Sanctis'} url={'https://portfolio-challenge.vercel.app/static/media/human.36814bf1.jpg'}></UserSmall>
+      <Project name={'Nicola De Sanctis'} url={'https://portfolio-challenge.vercel.app/static/media/human.36814bf1.jpg'}></Project>
+      <ProjectSm name={'Nicola De Sanctis'} url={'https://portfolio-challenge.vercel.app/static/media/human.36814bf1.jpg'}></ProjectSm>
     </div>
   );
 }

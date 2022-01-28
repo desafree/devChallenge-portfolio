@@ -1,13 +1,381 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+*,*::after,*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: orange;
+}
+
+
+
+
+
+
+.userContainerLg{
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.userContainerLg figure{
+  flex-basis: 25%;
+  padding: 2rem;
+}
+
+.userContainerLg img{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.userContainerLgContent{
+  flex-basis: 75%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,min-content);
+  padding: 2rem;
+  color: #828282;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.userName{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4F4F4F;
+
+}
+
+.userJob{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin-bottom: 4rem;
+}
+
+.userText{
+  grid-column: 1/-1;
+}
+
+.userText:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.emailInfo{
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.emailInfo span{
+  margin-right: 1.6rem;
+}
+
+
+.phoneInfo{
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  color: #4F4F4F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.phoneInfo span{
+  margin-right: 1.6rem;
+}
+
+
+
+
+
+
+
+.userContainerSm{
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 12px;
+  margin: 6rem auto;
+  
+}
+
+.imgSmContainer{
+  padding: 2rem;
+  height: 40%;
+}
+
+.userContainerSmImg{
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.userSmName{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: .6rem;
+
+}
+
+.userSmJob{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+
+}
+
+.userSmText{
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 3.4rem;
+  margin-left: 2rem;
+  padding-bottom: 3.4rem;
+  color: #828282;
+}
+
+.iconCont{
+  padding-left: 2rem;
+}
+
+
+
+
+  
+
+
+
+  
+
+.projectContainerLg{
+  max-width: 120rem;
+  margin: 6rem auto;
+  border-radius: 1.2rem;
+  background-color: white;
+  padding: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.projectLgImg{
+  flex-basis: 30%;
+}
+
+.projectLgImg img{
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.projectLgContent{
+  flex-basis: 60%;
+  padding-left: 5rem;
+}
+
+.tech{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4F4F4F;
+
+}
+
+.tech ul{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+
+.tech li{
+
+}
+
+.projectLgName{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 1.8rem;
+
+}
+
+.projectLgText{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+  margin-bottom: 5rem;
+
+}
+
+.projectLgButtons{
+
+}
+
+.button1{
+  padding: 1.3rem 4rem;
+  background-color: #2F80ED;
+  border: 1px solid #2F80ED;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1.1rem;
+
+}
+
+.button2{
+  padding: 1.3rem 4rem;
+  background-color: white;
+  border: 1px solid #2F80ED;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2F80ED;
+  border-radius: 12px;
+}
+
+
+
+.projectContainerSm{
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 12px;
+  margin: 6rem auto;
+  padding: 2.2rem;
+}
+
+.projectSmImg{
+  height: 40%;
+}
+
+.projectSmImg img{
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.projectSmContent{
+  margin-top: 2.2rem;
+}
+
+.projectSmName{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 1.8rem;
+  color: #333333;
+
+}
+
+.projectSmText{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+  margin-bottom: 4.1rem;
+
+}
+
+.projectSmButtons{
+
 }
