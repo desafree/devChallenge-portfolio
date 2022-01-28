@@ -267,10 +267,6 @@ body{
   margin-bottom: 2.5rem;
 }
 
-.tech li{
-
-}
-
 .projectLgName{
   font-size: 24px;
   font-style: normal;
@@ -295,9 +291,7 @@ body{
 
 }
 
-.projectLgButtons{
 
-}
 
 .button1{
   padding: 1.3rem 4rem;
@@ -376,6 +370,235 @@ body{
 
 }
 
-.projectSmButtons{
 
+
+
+
+
+
+.skillsLgContainer{
+  max-width: 120rem;
+  padding: 2.2rem;
+  background-color: white;
+  margin: 6rem auto;
+  border-radius: 1.2rem;
+}
+
+.skillsTitle{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4F4F4F;
+}
+
+.skillsList{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  list-style: none;
+  margin-top: 1.6rem;
+  gap: 2.5rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4F4F4F;
+  grid-column-gap: 5rem;
+
+}
+
+.skillsItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillsItem p{
+  width: 20%;
+}
+
+.skillsValue{
+  height: 9px;
+  border-radius: 12px;
+  width: 70%;
+  background-image: linear-gradient(to right, #2F80ED 50%, #C4C4C4 50%);
+}
+
+
+
+
+
+
+
+
+
+.skillsSmContainer{
+  box-sizing: content-box;
+  max-width: 40rem;
+  padding: 2.2rem;
+  background-color: white;
+  margin: 6rem auto;
+  border-radius: 1.2rem;
+
+}
+
+.skillsSmList{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 1.6rem;
+  gap: 2.5rem;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4F4F4F;
+}
+
+
+
+
+
+
+
+
+.blogLgContainer{
+  max-width: 120rem;
+  padding: 2.2rem;
+  background-color: white;
+  margin: 6rem auto;
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogContent{
+  flex-basis: 50%;
+}
+
+.blogContent .intro{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E0E0E0;
+  margin-bottom: 3rem;
+
+}
+
+.blogContent h2{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 2.6rem;
+  color: #333333;
+
+}
+
+.blogTextContent{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #828282;
+  margin-bottom: 3rem;
+
+}
+
+.last{
+  margin-bottom: 6rem;
+}
+
+.blogLink{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2F80ED;
+
+}
+
+.blogImg{
+  flex-basis: 50%;
+  
+}
+
+.blogImg img{
+  max-height: 350px;
+  float: right;
+  border-radius: 12px;
+}
+
+
+
+
+
+
+.blogSmContainer{
+  max-width: 50rem;
+  padding: 2.2rem;
+  background-color: white;
+  margin: 6rem auto;
+  border-radius: 1.2rem;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  overflow: hidden;
+}
+
+.blogSmContent{
+  grid-column: 1/-1;
+}
+
+.introSm{
+  grid-column: 1/2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #E0E0E0;
+}
+
+.titleBlogSm{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2.1rem;
+  color: #333333;
+}
+.blogSmContent{
+  grid-column: 1/-1;
+  margin-top: 5rem;
+}
+
+.blogSmImg{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  
+}
+
+.blogSmImg img{
+  width: 110%;
+  border-radius: 12px;
 }
